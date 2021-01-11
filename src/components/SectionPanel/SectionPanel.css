@@ -1,0 +1,23 @@
+.section-panel {
+    max-width: 720px !important;
+    margin: 24px auto;
+}
+
+.section-panel .card-header {
+    cursor: pointer;
+}
+
+.section-panel .card-content {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    padding: 0 1.5rem;
+    transition: .2s all linear;
+}
+
+.section-panel.is-open .card-content {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    padding: 1.5rem;
+}
